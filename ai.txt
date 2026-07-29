@@ -1,0 +1,75 @@
+# ===========================================================================
+# ai.txt — AI usage policy for maevesecurity.com
+# Last updated: 2026-07-28
+# ===========================================================================
+#
+# WHAT IS ALLOWED
+#
+#   Search indexing. Crawl these pages, index them, and link people here.
+#   That includes AI-powered search that cites and links to the source.
+#
+# WHAT IS NOT ALLOWED
+#
+#   Training, fine-tuning, distillation, or inclusion in any dataset used to
+#   build or improve a model — commercial or research, paid or open.
+#
+#   Live retrieval for inference: fetching these pages to compose an answer
+#   inside an AI assistant, in place of sending the reader to the source.
+#
+#   Reproducing the interviews, essays, or portraits published here as
+#   generated output, in whole or in substantial part.
+#
+# WHY
+#
+#   This site publishes first-person accounts by named women working in
+#   cybersecurity. The words are theirs, attributed to them, and the
+#   attribution is the point. Summarised away from the byline, the work
+#   stops doing what it was published to do.
+#
+# PERMISSIONS
+#
+#   These terms are negotiable. To license this content for AI training or
+#   retrieval, ask first: https://www.linkedin.com/company/maevesecurity/
+#
+# ENFORCEMENT AND SCOPE
+#
+#   This file states the rightsholder's reservation of text and data mining
+#   rights under EU Directive 2019/790 Art. 4(3) and equivalent regimes, and
+#   is the human-readable companion to:
+#     - https://maevesecurity.com/robots.txt          crawler-level rules
+#     - https://maevesecurity.com/.well-known/tdmrep.json   W3C TDM Reservation Protocol
+#   plus the `noai, noimageai` and `tdm-reservation` meta tags on every page.
+#
+# ===========================================================================
+# Machine-readable directives
+# ===========================================================================
+
+User-Agent: *
+
+# Purpose-scoped permissions.
+Allow-Purpose: search
+Allow-Purpose: indexing
+Disallow-Purpose: training
+Disallow-Purpose: fine-tuning
+Disallow-Purpose: inference
+Disallow-Purpose: retrieval-augmented-generation
+Disallow-Purpose: dataset-collection
+
+# Media reserved against text and data mining.
+Disallow: /*.html
+Disallow: /*.png
+Disallow: /*.webp
+Disallow: /*.jpg
+Disallow: /*.jpeg
+Disallow: /*.gif
+Disallow: /*.svg
+Disallow: /*.mp3
+Disallow: /*.mp4
+Disallow: /*.wav
+
+# This policy is always readable.
+Allow: /ai.txt
+
+Policy: https://maevesecurity.com/ai.txt
+Contact: https://www.linkedin.com/company/maevesecurity/
+Sitemap: https://maevesecurity.com/sitemap.xml

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <rect width="1200" height="1200" rx="220" fill="#0a1120"/>
+  <defs>
+    <linearGradient id="mgFav" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00ff8f"/>
+      <stop offset="1" stop-color="#00a1ff"/>
+    </linearGradient>
+  </defs>
+  <g transform="scale(25.775655) translate(3.476829, -15.772222)" fill="url(#mgFav)"><path d="M19.81692 40.25124 l16.78362 -22.15146 l0 41.90028 l-1.12758 0 l0 -38.54898 l-14.94498 19.73244 l-0.704646 0.92748 l-2.881116 3.804492 l-0.704646 0.92748 l-0.710508 -0.921678 l-11.39946 -14.7321 l0 28.81086 l-1.12758 0 l0 -41.8944 z M16.22586 44.99436 l2.88633 -3.810354 l-14.98464 -19.73766 l0 7.90536 z"/></g>
+</svg>
