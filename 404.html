@@ -97,22 +97,373 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="shell shell--coming-soon">
-  <nav class="nav nav--static" aria-label="Primary">
-  <div class="nav__brand">
+  <nav class="nav" aria-label="Primary">
+  <a class="nav__brand" href="/">
     <svg viewBox="0 0 1200 1200" width="34" height="34" class="logo-mark " aria-hidden="true" focusable="false">
   <defs>
-    <linearGradient id="mg-nav" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="mg-doc-nav" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#00ff8f"/>
       <stop offset="1" stop-color="#00a1ff"/>
     </linearGradient>
   </defs>
-  <g transform="scale(25.775655) translate(3.476829, -15.772222)" fill="url(#mg-nav)"><path d="M19.81692 40.25124 l16.78362 -22.15146 l0 41.90028 l-1.12758 0 l0 -38.54898 l-14.94498 19.73244 l-0.704646 0.92748 l-2.881116 3.804492 l-0.704646 0.92748 l-0.710508 -0.921678 l-11.39946 -14.7321 l0 28.81086 l-1.12758 0 l0 -41.8944 z M16.22586 44.99436 l2.88633 -3.810354 l-14.98464 -19.73766 l0 7.90536 z"/></g>
+  <g transform="scale(25.775655) translate(3.476829, -15.772222)" fill="url(#mg-doc-nav)"><path d="M19.81692 40.25124 l16.78362 -22.15146 l0 41.90028 l-1.12758 0 l0 -38.54898 l-14.94498 19.73244 l-0.704646 0.92748 l-2.881116 3.804492 l-0.704646 0.92748 l-0.710508 -0.921678 l-11.39946 -14.7321 l0 28.81086 l-1.12758 0 l0 -41.8944 z M16.22586 44.99436 l2.88633 -3.810354 l-14.98464 -19.73766 l0 7.90536 z"/></g>
 </svg>
 
     <span class="wordmark">MAEVE SECURITY</span>
+  </a>
+
+  <div class="nav__links">
+    
+      <a class="nav__link" href="/#stories">PODCAST</a>
+      
+    
+      
+    
+      
+    
+      <a class="nav__link" href="/founder/">HOST</a>
+      
+    
+      <a class="nav__link" href="/#notify">NEWSLETTER</a>
+      
+    
+      <a class="nav__link" href="/sponsors/">SPONSOR</a>
+      
+    
+    <a class="btn btn--accent btn--sm" href="/#nominate" data-nominate-open aria-haspopup="dialog">NOMINATE</a>
+    
   </div>
-  <span class="nav__status">COMING SOON</span>
 </nav>
+
+<dialog class="modal"
+        data-nominate-modal
+        aria-labelledby="nf-title"
+        data-form-id="REPLACE_FORM_ID"
+        data-label-idle="SEND NOMINATION"
+        data-label-sending="SENDING…"
+        data-error-summary="Please check the highlighted fields."
+        data-error-required="%s is required."
+        data-error-email="Please enter a valid email address."
+        data-error-url="Please enter a full address, starting with https://">
+  <div class="modal__panel">
+    <button type="button" class="modal__close" data-nominate-close aria-label="Close nomination form">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+
+    <p class="eyebrow">NOMINATE A VOICE</p>
+    <h2 class="modal__title" id="nf-title">Who should we be talking to?</h2>
+    <p class="modal__intro">Tell us about her. We read every nomination, and we follow up before anything is published — nobody ends up on Maeve without saying yes first.</p>
+
+    <form class="nf"
+          data-nominate-form
+          novalidate
+          action="https://docs.google.com/forms/d/e/REPLACE_FORM_ID/formResponse"
+          method="post"
+          target="_blank">
+
+      
+        <fieldset class="nf__group">
+          <legend class="nf__legend">THE NOMINEE</legend>
+
+          
+              <div class="nf__field">
+                <label class="nf__label" for="nf-nominee_first">
+                  First name
+                </label>
+                
+                <input class="nf__input"
+                       type="text"
+                       id="nf-nominee_first"
+                       name="REPLACE_NOMINEE_FIRST"
+                       data-nominate-field
+                       data-type="text"
+                       data-required="true"
+                       data-label="First name"
+                       data-error-id="nf-nominee_first-error"
+                       aria-describedby="nf-nominee_first-error"
+                       
+                       autocomplete="off"
+                       required>
+                <p class="nf__field-error" id="nf-nominee_first-error" data-field-error hidden></p>
+              </div>
+
+            
+          
+              <div class="nf__field">
+                <label class="nf__label" for="nf-nominee_last">
+                  Last name
+                </label>
+                
+                <input class="nf__input"
+                       type="text"
+                       id="nf-nominee_last"
+                       name="REPLACE_NOMINEE_LAST"
+                       data-nominate-field
+                       data-type="text"
+                       data-required="true"
+                       data-label="Last name"
+                       data-error-id="nf-nominee_last-error"
+                       aria-describedby="nf-nominee_last-error"
+                       
+                       autocomplete="off"
+                       required>
+                <p class="nf__field-error" id="nf-nominee_last-error" data-field-error hidden></p>
+              </div>
+
+            
+          
+              <div class="nf__field">
+                <label class="nf__label" for="nf-nominee_linkedin">
+                  LinkedIn profile
+                </label>
+                
+                <input class="nf__input"
+                       type="url"
+                       id="nf-nominee_linkedin"
+                       name="REPLACE_NOMINEE_LINKEDIN"
+                       data-nominate-field
+                       data-type="url"
+                       data-required="true"
+                       data-label="LinkedIn profile"
+                       data-error-id="nf-nominee_linkedin-error"
+                       aria-describedby="nf-nominee_linkedin-error"
+                       placeholder="https://www.linkedin.com/in/…"
+                       
+                       required>
+                <p class="nf__field-error" id="nf-nominee_linkedin-error" data-field-error hidden></p>
+              </div>
+
+            
+          
+              <div class="nf__field">
+                <label class="nf__label" for="nf-nominee_link">
+                  Blog, YouTube, or anywhere else her work lives <span class="nf__optional">(optional)</span>
+                </label>
+                
+                <input class="nf__input"
+                       type="url"
+                       id="nf-nominee_link"
+                       name="REPLACE_NOMINEE_LINK"
+                       data-nominate-field
+                       data-type="url"
+                       data-required="false"
+                       data-label="Blog, YouTube, or anywhere else her work lives"
+                       data-error-id="nf-nominee_link-error"
+                       aria-describedby="nf-nominee_link-error"
+                       placeholder="https://…"
+                       
+                       >
+                <p class="nf__field-error" id="nf-nominee_link-error" data-field-error hidden></p>
+              </div>
+
+            
+          
+              <div class="nf__field">
+                <label class="nf__label" for="nf-nominee_email">
+                  Her email address <span class="nf__optional">(optional)</span>
+                </label>
+                <p class="nf__help" id="nf-nominee_email-help">Only if you have it and she'd be glad you shared it — otherwise we'll find her ourselves.</p>
+                <input class="nf__input"
+                       type="email"
+                       id="nf-nominee_email"
+                       name="REPLACE_NOMINEE_EMAIL"
+                       data-nominate-field
+                       data-type="email"
+                       data-required="false"
+                       data-label="Her email address"
+                       data-error-id="nf-nominee_email-error"
+                       aria-describedby="nf-nominee_email-help nf-nominee_email-error"
+                       
+                       
+                       >
+                <p class="nf__field-error" id="nf-nominee_email-error" data-field-error hidden></p>
+              </div>
+
+            
+          
+        </fieldset>
+      
+        <fieldset class="nf__group">
+          <legend class="nf__legend">THE NOMINATION</legend>
+
+          
+              <fieldset class="nf__field nf__field--radio"
+                        data-nominate-field
+                        data-type="radio"
+                        data-required="true"
+                        data-label="What are you nominating her for?"
+                        data-error-id="nf-format-error"
+                        aria-describedby="nf-format-error">
+                <legend class="nf__label">
+                  What are you nominating her for?
+                </legend>
+                
+                <div class="nf__radios">
+                  
+                    <label class="nf__radio">
+                      <input type="radio" name="REPLACE_FORMAT" value="Podcast" required>
+                      <span>A podcast interview</span>
+                    </label>
+                  
+                    <label class="nf__radio">
+                      <input type="radio" name="REPLACE_FORMAT" value="Article" required>
+                      <span>A written piece</span>
+                    </label>
+                  
+                </div>
+                <p class="nf__field-error" id="nf-format-error" data-field-error hidden></p>
+              </fieldset>
+
+            
+          
+              <div class="nf__field">
+                <label class="nf__label" for="nf-reason">
+                  Why her?
+                </label>
+                <p class="nf__help" id="nf-reason-help">What she's done, what she'd have to say, or simply why you keep thinking about her work.</p>
+                <textarea class="nf__input nf__textarea"
+                          id="nf-reason"
+                          name="REPLACE_REASON"
+                          rows="5"
+                          data-nominate-field
+                          data-type="textarea"
+                          data-required="true"
+                          data-label="Why her?"
+                          data-error-id="nf-reason-error"
+                          aria-describedby="nf-reason-help nf-reason-error"
+                          
+                          required></textarea>
+                <p class="nf__field-error" id="nf-reason-error" data-field-error hidden></p>
+              </div>
+
+            
+          
+        </fieldset>
+      
+        <fieldset class="nf__group">
+          <legend class="nf__legend">ABOUT YOU</legend>
+
+          
+              <div class="nf__field">
+                <label class="nf__label" for="nf-submitter_first">
+                  First name
+                </label>
+                
+                <input class="nf__input"
+                       type="text"
+                       id="nf-submitter_first"
+                       name="REPLACE_SUBMITTER_FIRST"
+                       data-nominate-field
+                       data-type="text"
+                       data-required="true"
+                       data-label="First name"
+                       data-error-id="nf-submitter_first-error"
+                       aria-describedby="nf-submitter_first-error"
+                       
+                       autocomplete="given-name"
+                       required>
+                <p class="nf__field-error" id="nf-submitter_first-error" data-field-error hidden></p>
+              </div>
+
+            
+          
+              <div class="nf__field">
+                <label class="nf__label" for="nf-submitter_last">
+                  Last name
+                </label>
+                
+                <input class="nf__input"
+                       type="text"
+                       id="nf-submitter_last"
+                       name="REPLACE_SUBMITTER_LAST"
+                       data-nominate-field
+                       data-type="text"
+                       data-required="true"
+                       data-label="Last name"
+                       data-error-id="nf-submitter_last-error"
+                       aria-describedby="nf-submitter_last-error"
+                       
+                       autocomplete="family-name"
+                       required>
+                <p class="nf__field-error" id="nf-submitter_last-error" data-field-error hidden></p>
+              </div>
+
+            
+          
+              <div class="nf__field">
+                <label class="nf__label" for="nf-submitter_email">
+                  Your email address
+                </label>
+                
+                <input class="nf__input"
+                       type="email"
+                       id="nf-submitter_email"
+                       name="REPLACE_SUBMITTER_EMAIL"
+                       data-nominate-field
+                       data-type="email"
+                       data-required="true"
+                       data-label="Your email address"
+                       data-error-id="nf-submitter_email-error"
+                       aria-describedby="nf-submitter_email-error"
+                       
+                       autocomplete="email"
+                       required>
+                <p class="nf__field-error" id="nf-submitter_email-error" data-field-error hidden></p>
+              </div>
+
+            
+          
+              <div class="nf__field">
+                <label class="nf__label" for="nf-relationship">
+                  How do you know her?
+                </label>
+                
+                <input class="nf__input"
+                       type="text"
+                       id="nf-relationship"
+                       name="REPLACE_RELATIONSHIP"
+                       data-nominate-field
+                       data-type="text"
+                       data-required="true"
+                       data-label="How do you know her?"
+                       data-error-id="nf-relationship-error"
+                       aria-describedby="nf-relationship-error"
+                       placeholder="Colleague, mentor, read her work…"
+                       
+                       required>
+                <p class="nf__field-error" id="nf-relationship-error" data-field-error hidden></p>
+              </div>
+
+            
+          
+        </fieldset>
+      
+
+      <p class="nf__error" data-nominate-error role="alert" hidden></p>
+
+      <div class="nf__actions">
+        <button type="button" class="btn btn--ghost" data-nominate-close>CANCEL</button>
+        <button type="submit" class="btn btn--primary" data-nominate-submit>SEND NOMINATION</button>
+      </div>
+
+      <p class="nf__fine">
+        We use these details to follow up on the nomination, nothing else.
+        <a class="notify__fine-link" href="/privacy/">How we handle your details</a>.
+      </p>
+    </form>
+
+    <div class="nf__success" data-nominate-success hidden>
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#00ff8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon--check" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
+
+      <div>
+        <p class="notify__success-title">Nomination received.</p>
+        <p class="notify__success-body">Thank you — we'll be in touch if we take it forward.</p>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script src="/assets/js/nominate.js" defer></script>
 
   <main id="main" class="shell__main" tabindex="-1">
     <header class="hero hero--full">
